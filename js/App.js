@@ -1,3 +1,6 @@
+const parameter = location.search.substr(location.search.indexOf("?") + 1)
+const teamId = parameter.split("=")[1]
+
 function App() {
   const $todoApps = document.querySelector('.todoapp-list-container')
   $todoApps.addEventListener('click', e => {
@@ -17,3 +20,5 @@ function App() {
 }
 
 new App()
+
+console.log(teamId)
